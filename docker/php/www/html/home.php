@@ -1,4 +1,4 @@
-div class="line"></div>
+<div class="line"></div>
 <div class="wrapper">
   <header role="banner">
     <nav role="navigation">

@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+// Check logged in
+if (!isset($_SESSION['user'])) {
+  header("Location: /index.php");
+  die;
+}
+
+// Logout
+if (!empty($_POST)) {
+  session_destroy();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
