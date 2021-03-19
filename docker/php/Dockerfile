@@ -17,5 +17,6 @@ RUN mkdir /var/www && \
 
 # Cleanup
 RUN rm -rf /s6-overlay-amd64.tar.gz
+adduser john
 
 ENTRYPOINT ["/init"]
