@@ -148,7 +148,7 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>SQL Injection</h2>
+<h2>My Demo website</h2>
 <p>TEST</p>
   <form method="post">
         <input type="text" name="username" placeholder="Username" required>
