@@ -4,7 +4,7 @@ div class="line"></div>
     <nav role="navigation">
       <h1><a href="#">Fake contact page</a></h1>
       <ul class="nav-ul">
-        <li><a href="home.php">home</a></li>
+        <li><a href="/index.php?page=home.php">home</a></li>
        
       </ul>
     </nav>
