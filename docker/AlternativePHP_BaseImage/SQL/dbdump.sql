@@ -10,6 +10,11 @@ VALUES
   (Rick_Astley, NeverGonnaGiveYouUp)
   (Baby, Shark)
   (Harry, IamaWizzard!)
-  (Cool_Guy, Neverseenexplonisons)
+  (Cool_Guy, Neverseenexplosions)
   (Dan, Isalegend)
-  (Adam, Isalegend2);
+  (Adam, Isalegend2)
+  (Hey, ImJustMatthew)
+  (Richie, Cooldude)
+  (omae_wa_mou, shindeiru)
+  (Isthis, anSQLserver?)
+  (Evan, Bestteammateever!);
