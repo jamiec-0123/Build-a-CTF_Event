@@ -142,10 +142,10 @@ input[type=submit]:hover {
 
 <h2>SQL Injection</h2>
 <p>TEST</p>
-
+  <form method="post">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
         <input type="submit" value="Login">
-
+  </form>
 </body>
 </html>
