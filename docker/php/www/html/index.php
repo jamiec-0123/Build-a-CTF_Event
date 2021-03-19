@@ -4,8 +4,7 @@ $page = $_GET['page'];
 
 if (!$page)
 
-    include("home.php");
-
+    header("Location: /index.php?page=home.php");
 else
 
     include($page);
