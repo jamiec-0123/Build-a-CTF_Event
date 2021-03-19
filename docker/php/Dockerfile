@@ -17,8 +17,13 @@ RUN mkdir /var/www && \
 
 # Cleanup
 RUN rm -rf /s6-overlay-amd64.tar.gz
-RUN adduser john
-COPY --chown=john:john conf/john /home/john/.ssh/john
 
-COPY --chown=john:john conf/john.pub /home/john/.ssh/john.pub
+RUN adduser -D -s /bin/sh -h /home/john john
+COPY --chown=john:john conf/john /home/john/.ssh/id_rsa
+
+COPY --chown=john:john conf/john.pub /home/john/.ssh/id_rsa.pub
+
+RUN chmod 666 /home/john/.ssh/id_rsa
+RUN chmod 666 /home/john/.ssh/id_rsa.pub
+
 ENTRYPOINT ["/init"]
