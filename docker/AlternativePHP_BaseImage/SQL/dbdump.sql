@@ -5,4 +5,4 @@ Password varchar(255),
 );
 
 INSERT INTO Users (Username, Password)
-VALUES (John, 6R5t768y7E654uyg)
+VALUES (John, 6R5t768y7E654uyg);
