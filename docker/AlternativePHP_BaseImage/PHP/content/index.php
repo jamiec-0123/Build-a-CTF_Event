@@ -1,7 +1,15 @@
 <?php
 
 include "conn.php";
+// Form was submitted
+if (isset($_POST)) {
+    $query = $conn->query("SELECT password WHERE username = " . $_POST['username']);
+    $user = $query->fetch_assoc();
 
+    if ($user['password'] == $_POST['password']) {
+        // Username and password is correct. Can login.
+    }
+}
 ?>
 <!DOCTYPE html>
 <html>
