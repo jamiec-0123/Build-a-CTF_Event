@@ -6,11 +6,19 @@ include "conn.php";
 // Form was submitted
 if (!empty($_POST)) {
     $query = $conn->query("SELECT password FROM users WHERE username = '" . $_POST['username'] . "'");
-    $user = $query->fetch_assoc();
 
-    if ($user['password'] == $_POST['password']) {
-        $_SESSION['user'] = $_POST['username'];
-        header("Location: /home.php");
+    $user = $query->fetch_assoc();
+    if ($user) {
+        if ($user['password'] == $_POST['password']) {
+            $_SESSION['user'] = $_POST['username'];
+            header("Location: /home.php");
+        } 
+        else {
+            echo "Invalid password";
+        }
+    } 
+    else {
+        echo "User does not exist";
     }
 }
 ?>

@@ -10,6 +10,8 @@ if (!isset($_SESSION['user'])) {
 // Logout
 if (!empty($_POST)) {
   session_destroy();
+  header("Location: /index.php");
+  die;
 }
 ?>
 <!DOCTYPE html>
@@ -150,9 +152,10 @@ input[type=submit]:hover {
 <body>
 
 <h2>My demo website</h2>
-<p>TEST</p>
+<p>Hello <?= $_SESSION['user']; ?>!</p>
 	<form method="post">
-        <input type="submit" value="Logout">
+    <input type="hidden" name="logout" value="1">
+    <input type="submit" value="Logout">
 	</form>
 </body>
 </html>
