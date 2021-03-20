@@ -1,0 +1,4 @@
+TODO: 
+- Learn PHP and MySQL [IN PROGRESS]
+- Setup an SSH server [DONE]
+- Generate my SSH keys [DONE]
